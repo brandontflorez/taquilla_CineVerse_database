@@ -37,3 +37,12 @@ VALUES
 (2, '2026-11-21', '16:30:00', 'Sala 1', 20000, 45),
 (3, '2026-11-21', '14:00:00', 'Sala 3', 15000, 60),
 (4, '2026-11-22', '20:00:00', 'Sala 2', 22000, 35);
+
+INSERT INTO cineverse_cards
+(numero_tarjeta, nombre_titular, saldo)
+VALUES
+(
+    'CV-123456',
+    'Usuario de Prueba',
+    100000
+);
