@@ -28,6 +28,13 @@ CREATE TABLE compras (
     nombre_cliente VARCHAR(150) NOT NULL,
     cantidad_boletos INTEGER NOT NULL,
     valor_total DECIMAL(10,2) NOT NULL,
+
+CREATE TABLE cineverse_cards (
+    id SERIAL PRIMARY KEY,
+    numero_tarjeta VARCHAR(30) NOT NULL UNIQUE,
+    nombre_titular VARCHAR(100) NOT NULL,
+    saldo DECIMAL(12, 2) NOT NULL DEFAULT 0
+);
     fecha_compra TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT fk_compra_funcion
